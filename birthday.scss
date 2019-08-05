@@ -1,0 +1,168 @@
+$back :#600054;
+$vanilla: #f0e4d0;
+$chocolate: #553c13;
+$cakew:400px;
+$cakeh:300px;
+$platew:270px;
+$plateh:140px;
+$plate:#fff;
+$circle:50%;
+$layer:#E9CB78;
+$strawberry:#EB2424;
+$seed:rgba(0,0,0,0.7);
+
+
+body{
+    background-color:$back;
+}
+
+.cake{
+    position: absolute;
+    width:$cakew;
+    height:$cakeh;
+    left:50%;
+    top: 50%;
+    box-sizing: border-box;
+    margin-top:-70px;
+    margin-left:-125px;
+    padding:0;
+}
+
+.plate{
+    position: absolute;
+    width: $platew;
+    height: $plateh;
+    bottom: -20px;
+    left: -10px;
+    background:$plate;
+    border-radius: $circle;
+    box-shadow: 
+    0 2px 0 darken(#cccccc,10%),
+    0 4px 0 darken(#cccccc,10%),
+    0 5px 0 darken(#cccccc,10%),
+    0 6px 0 darken(#cccccc,10%),
+    0 8px 50px rgba(#000000,0.5);
+}
+
+@mixin cakelayer($color) {
+    background-color: $color;
+    box-shadow: 
+    0 2px 0px lighten($color, 5%),
+    0 4px 0px darken($color, 8.2%),
+    0 6px 0px darken($color, 8.4%),
+    0 8px 0px darken($color, 8.6%),
+    0 10px 0px darken($color, 8.8%),
+    0 12px 0px darken($color, 9%),
+    0 14px 0px darken($color, 9.2%),
+    0 16px 0px darken($color, 9.4%),
+    0 18px 0px darken($color, 9.6%),
+    0 20px 0px darken($color, 9.8%),
+    0 22px 0px darken($color, 10%),
+    0 24px 0px darken($color, 10.2%),
+    0 26px 0px darken($color, 10.4%),
+    0 28px 0px darken($color, 10.6%),
+    0 30px 0px darken($color, 10.8%);
+
+}
+
+.layer{
+   
+    position:absolute;
+    display: block;
+    width: 250px;
+    height: 100px;
+    border-radius: 50%;
+    @include cakelayer($layer);
+}
+
+.layer1 { bottom: 20px; }
+.layer2 { bottom: 53px; }
+.layer3 { bottom: 86px; }
+
+
+.cream {
+    bottom: 90px;
+    left:5px;
+    background-color: $vanilla;
+    width: 240px;
+    height: 90px;
+    border-radius: $circle;
+    position: absolute;
+     
+    }
+
+    .drip {
+        display: block;
+        width: 50px;
+        height: 60px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        background-color: $vanilla;
+    }
+    
+    .drip1 {
+        bottom: 70px;
+        left: 30px;
+        transform: skewY(20deg);
+        position: absolute;
+        width:40px
+    }
+
+    .drip2 {
+        bottom: 70px;
+        left: 180px;
+        transform: skewY(-20deg);
+        position: absolute;
+        width:60px;
+    }
+
+    .drip3 {
+        bottom: 70px;
+        left: 105px;
+        transform: skewY(5deg);
+        position: absolute;
+        width:70px;
+    }
+
+@mixin straw() {
+    background:$strawberry;
+    box-shadow: 0 -5px 2px #b8100a;
+    border-radius: 15% $circle $circle $circle;
+     
+}
+
+
+.strawberry{
+@include straw();
+width: 13%;
+height: 19.5%;
+}
+
+.strawberry::before {
+    content:"";
+    position: absolute;
+    width: 6%;
+    height: 6%;
+    color: $seed;
+    box-shadow:/*left seeds*/
+    5px 5px 0 $seed, 3px 15px 0 $seed, 3px 25px 0 $seed, 3px 35px 0 $seed, 5px 46px 0 $seed, 
+    /* Right  seeds */
+    16px 3px 0 $seed, 26px 4px 0 $seed,
+    /* Center seeds */
+    15px 15px 0 $seed, 14px 27px 0 $seed, 26px 15px 0 $seed, 17px 40px 0 $seed, 28px 29px 0 $seed, 39px 17px 0 $seed, 32px 43px 0 $seed, 43px 32px 0 $seed, 
+   
+  
+}
+
+
+.strawberry.one{
+    transform: rotate(30deg);
+}
+
+.strawberry.two{
+    transform: rotate(40deg);
+}
+
+.strawberry.three{
+    transform: rotate(50deg);
+}

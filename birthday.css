@@ -1,0 +1,132 @@
+body {
+  background-color: #600054;
+}
+
+.cake {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  left: 50%;
+  top: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: -70px;
+  margin-left: -125px;
+  padding: 0;
+}
+
+.plate {
+  position: absolute;
+  width: 270px;
+  height: 140px;
+  bottom: -20px;
+  left: -10px;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 0 #b3b3b3, 0 4px 0 #b3b3b3, 0 5px 0 #b3b3b3, 0 6px 0 #b3b3b3, 0 8px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 0 #b3b3b3, 0 4px 0 #b3b3b3, 0 5px 0 #b3b3b3, 0 6px 0 #b3b3b3, 0 8px 50px rgba(0, 0, 0, 0.5);
+}
+
+.layer {
+  position: absolute;
+  display: block;
+  width: 250px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #E9CB78;
+  -webkit-box-shadow: 0 2px 0px #edd38e, 0 4px 0px #e3bd54, 0 6px 0px #e3bd53, 0 8px 0px #e3bc52, 0 10px 0px #e3bc51, 0 12px 0px #e3bc51, 0 14px 0px #e2bb50, 0 16px 0px #e2bb4f, 0 18px 0px #e2bb4e, 0 20px 0px #e2ba4d, 0 22px 0px #e2ba4c, 0 24px 0px #e2ba4b, 0 26px 0px #e2b94a, 0 28px 0px #e1b94a, 0 30px 0px #e1b949;
+          box-shadow: 0 2px 0px #edd38e, 0 4px 0px #e3bd54, 0 6px 0px #e3bd53, 0 8px 0px #e3bc52, 0 10px 0px #e3bc51, 0 12px 0px #e3bc51, 0 14px 0px #e2bb50, 0 16px 0px #e2bb4f, 0 18px 0px #e2bb4e, 0 20px 0px #e2ba4d, 0 22px 0px #e2ba4c, 0 24px 0px #e2ba4b, 0 26px 0px #e2b94a, 0 28px 0px #e1b94a, 0 30px 0px #e1b949;
+}
+
+.layer1 {
+  bottom: 20px;
+}
+
+.layer2 {
+  bottom: 53px;
+}
+
+.layer3 {
+  bottom: 86px;
+}
+
+.cream {
+  bottom: 90px;
+  left: 5px;
+  background-color: #f0e4d0;
+  width: 240px;
+  height: 90px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.drip {
+  display: block;
+  width: 50px;
+  height: 60px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #f0e4d0;
+}
+
+.drip1 {
+  bottom: 70px;
+  left: 30px;
+  -webkit-transform: skewY(20deg);
+          transform: skewY(20deg);
+  position: absolute;
+  width: 40px;
+}
+
+.drip2 {
+  bottom: 70px;
+  left: 180px;
+  -webkit-transform: skewY(-20deg);
+          transform: skewY(-20deg);
+  position: absolute;
+  width: 60px;
+}
+
+.drip3 {
+  bottom: 70px;
+  left: 105px;
+  -webkit-transform: skewY(5deg);
+          transform: skewY(5deg);
+  position: absolute;
+  width: 70px;
+}
+
+.strawberry {
+  background: #EB2424;
+  -webkit-box-shadow: 0 -5px 2px #b8100a;
+          box-shadow: 0 -5px 2px #b8100a;
+  border-radius: 15% 50% 50% 50%;
+  width: 13%;
+  height: 19.5%;
+}
+
+.strawberry::before {
+  content: "";
+  position: absolute;
+  width: 6%;
+  height: 6%;
+  color: rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.7), 3px 15px 0 rgba(0, 0, 0, 0.7), 3px 25px 0 rgba(0, 0, 0, 0.7), 3px 35px 0 rgba(0, 0, 0, 0.7), 5px 46px 0 rgba(0, 0, 0, 0.7), 16px 3px 0 rgba(0, 0, 0, 0.7), 26px 4px 0 rgba(0, 0, 0, 0.7), 15px 15px 0 rgba(0, 0, 0, 0.7), 14px 27px 0 rgba(0, 0, 0, 0.7), 26px 15px 0 rgba(0, 0, 0, 0.7), 17px 40px 0 rgba(0, 0, 0, 0.7), 28px 29px 0 rgba(0, 0, 0, 0.7), 39px 17px 0 rgba(0, 0, 0, 0.7), 32px 43px 0 rgba(0, 0, 0, 0.7), 43px 32px 0 rgba(0, 0, 0, 0.7);
+          box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.7), 3px 15px 0 rgba(0, 0, 0, 0.7), 3px 25px 0 rgba(0, 0, 0, 0.7), 3px 35px 0 rgba(0, 0, 0, 0.7), 5px 46px 0 rgba(0, 0, 0, 0.7), 16px 3px 0 rgba(0, 0, 0, 0.7), 26px 4px 0 rgba(0, 0, 0, 0.7), 15px 15px 0 rgba(0, 0, 0, 0.7), 14px 27px 0 rgba(0, 0, 0, 0.7), 26px 15px 0 rgba(0, 0, 0, 0.7), 17px 40px 0 rgba(0, 0, 0, 0.7), 28px 29px 0 rgba(0, 0, 0, 0.7), 39px 17px 0 rgba(0, 0, 0, 0.7), 32px 43px 0 rgba(0, 0, 0, 0.7), 43px 32px 0 rgba(0, 0, 0, 0.7);
+}
+
+.strawberry.one {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.strawberry.two {
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+.strawberry.three {
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+}
+/*# sourceMappingURL=birthday.css.map */
