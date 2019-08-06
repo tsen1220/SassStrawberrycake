@@ -10,6 +10,7 @@ $circle:50%;
 $layer:#E9CB78;
 $strawberry:#EB2424;
 $seed:rgba(0,0,0,0.7);
+$flame:#F28E1A;
 
 
 body{
@@ -136,9 +137,7 @@ body{
 @include straw();
 width: 13%;
 height: 19.5%;
-}
-
-.strawberry::before {
+&:before {
     content:"";
     position: absolute;
     width: 6%;
@@ -154,15 +153,161 @@ height: 19.5%;
   
 }
 
+}
+
+
 
 .strawberry.one{
     transform: rotate(30deg);
+    position: absolute;
+     bottom:130px;
+     z-index: 2;
 }
 
 .strawberry.two{
     transform: rotate(40deg);
+    position: absolute;
+    bottom:150px;
+    left:60px;
+    z-index: 2;
 }
 
 .strawberry.three{
     transform: rotate(50deg);
-}
+    position: absolute;
+    bottom:130px;
+    left:200px;
+    z-index: 2;}
+
+    .strawberry.four{
+        transform: rotate(30deg);
+        position: absolute;
+        bottom:150px;
+        left:120px;
+         z-index: 0;
+    }
+    
+    .strawberry.five{
+        transform: rotate(40deg);
+        position: absolute;
+        bottom:150px;
+        left:170px;
+        z-index: 1;
+        
+    }
+    
+    .strawberry.six{
+        transform: rotate(50deg);
+        position: absolute;
+        bottom:100px;
+        left:40px;
+        z-index: 2;}
+    
+        .strawberry.seven{
+            transform: rotate(20deg);
+            position: absolute;
+            bottom:97px;
+            left:170px;
+            z-index: 2;}
+    
+            .strawberry.eight{
+                transform: rotate(40deg);
+                position: absolute;
+                bottom:90px;
+                left:100px;
+                z-index: 5;}
+    
+                .candle {
+                    position: absolute;
+                    background-color: #7B020B;
+                    width: 16px;
+                    height: 150px;
+                    border-radius: 8px  4px;
+                    bottom:125px;
+                    left: 110px;
+                    z-index: 3;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 16px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background-color: lighten(#7B020B, 10%);
+                    }
+                  
+                }
+
+
+                .flame {
+                    position: absolute;
+                    background-color: $flame;
+                    width: 15px;
+                    height: 35px;
+                    border-radius: 10px 10px 10px 10px /50px 50px  10px 10px ;
+                    top: -34px;
+                    left: 5%;
+                    z-index: 10;
+                    box-shadow:
+                        0 0 10px rgba($flame, 0.5),
+                        0 0 20px rgba($flame, 0.5),
+                        0 0 60px rgba($flame, 0.5),
+                        0 0 80px rgba($flame, 0.5);
+                    transform-origin: 50% 90%;
+                    display: block;
+                    animation: flicker 1s ease-in-out alternate infinite;
+                
+                 
+                }
+               
+
+
+
+                @keyframes flicker {
+                    0% {
+                        transform: skewX(5deg);
+                        box-shadow: 
+                            0 0 10px rgba($flame, 0.2),
+                            0 0 20px rgba($flame, 0.2),
+                            0 0 60px rgba($flame, 0.2),
+                            0 0 80px rgba($flame, 0.2) }
+                    25% {
+                        transform: skewX(-5deg);
+                        box-shadow:
+                            0 0 10px rgba($flame, 0.5),
+                            0 0 20px rgba($flame, 0.5),
+                            0 0 60px rgba($flame, 0.5),
+                            0 0 80px rgba($flame, 0.5) }
+                    50% {
+                        transform: skewX(10deg);
+                        box-shadow:
+                            0 0 10px rgba($flame, 0.3),
+                            0 0 20px rgba($flame, 0.3),
+                            0 0 60px rgba($flame, 0.3),
+                            0 0 80px rgba($flame, 0.3) }
+                    75% {
+                        transform: skewX(-10deg);
+                        box-shadow:
+                            0 0 10px rgba($flame, 0.4),
+                            0 0 20px rgba($flame, 0.4),
+                            0 0 60px rgba($flame, 0.4),
+                            0 0 80px rgba($flame, 0.4) }
+                    100% {
+                        transform: skewX(5deg);
+                        box-shadow:
+                            0 0 10px rgba($flame, 0.5),
+                            0 0 20px rgba($flame, 0.5),
+                            0 0 60px rgba($flame, 0.5),
+                            0 0 80px rgba($flame, 0.5) }
+                }
+                @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+             #test{
+                 opacity: 0;
+                 position: absolute;
+                 top:300px;
+                 font-size: 50px;
+                 font-family: 'Lobster', cursive;
+                 left:300px;
+
+             }
