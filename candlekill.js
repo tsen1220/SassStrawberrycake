@@ -6,6 +6,13 @@ var test=anime.timeline({
     autoplay:false,
 });
 
+test.add({
+    targets:".ggg",
+    opacity:0,
+    duration:2000,
+    top:'50px',
+})
+
 
 test.add({
     targets:"#test",

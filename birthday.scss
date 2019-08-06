@@ -371,3 +371,21 @@ height: 19.5%;
                 bottom:0;
                 right:0;
             }
+
+            .blow{
+                position: absolute;
+                right:30%;
+                bottom:60%;
+                color:#22CA6A;
+                font-size: 70px;
+                opacity: 1;
+            }
+
+            .hint{
+                position: absolute;
+                left:5%;
+                bottom:10%;
+                color:#22CA6A;
+                font-size: 30px;
+                opacity: 0.7;
+            }
