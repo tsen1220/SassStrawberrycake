@@ -4,7 +4,11 @@
 
 Developed by Sass/Scss, this is Happy birthday cake with animation.
 
-使用 Sass/Scss 的特色:
+如果你喜歡，請給我一顆星，我會很感謝你。
+
+If you like this, please give me a star. Thank you!!
+
+使用 Sass/Scss 特色(Sass/Scss feature):
 
 ```
 Varible:
@@ -36,7 +40,5 @@ Call:
 }
 
 ```
-
-如果你喜歡，請給我一顆星，我會很感謝你。 If you like this, please give me a star. Thank you!!
 
 <img src='https://raw.githubusercontent.com/tsen1220/strawberrycake/master/cake.jpg' alt=''>
