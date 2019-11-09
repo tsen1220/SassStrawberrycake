@@ -37,4 +37,6 @@ Call:
 
 ```
 
+如果你喜歡，請給我一顆星，我會很感謝你。 If you like this, please give me a star. Thank you!!
+
 <img src='https://raw.githubusercontent.com/tsen1220/strawberrycake/master/cake.jpg' alt=''>
