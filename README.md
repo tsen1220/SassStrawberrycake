@@ -2,11 +2,7 @@
 
 由 Sass/Scss 開發所製成的生日蛋糕，含吹熄蠟燭等動畫特效，並將其編譯為 CSS。
 
-如果你喜歡，請給我一顆星，感謝你。
-
 Developed by Sass/Scss, this is Happy birthday cake with animation.
-
-If you like this, please give me a star. Thank you!!
 
 Sass/Scss:
 
